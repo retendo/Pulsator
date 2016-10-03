@@ -22,6 +22,7 @@ public class Pulsator: CAReplicatorLayer {
     override public var backgroundColor: CGColor? {
         didSet {
             pulse.backgroundColor = backgroundColor
+            guard let backgroundColor = backgroundColor else {return}
             let oldAlpha = alpha
             alpha = CGColorGetAlpha(backgroundColor)
             if alpha != oldAlpha {
