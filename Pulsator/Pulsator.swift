@@ -208,7 +208,7 @@ public class Pulsator: CAReplicatorLayer, CAAnimationDelegate {
     
     // MARK: - Delegate methods for CAAnimation
     
-    override public func animationDidStop(anim: CAAnimation, finished flag: Bool) {
+    public func animationDidStop(anim: CAAnimation, finished flag: Bool) {
         if pulse.animationKeys()?.count > 0 {
             pulse.removeAllAnimations()
         }
