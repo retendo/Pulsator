@@ -9,7 +9,7 @@
 
 
 import UIKit
-import QuartzCore.QuartzCore
+import QuartzCore
 
 internal let kPulsatorAnimationKey = "pulsator"
 
