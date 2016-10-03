@@ -13,7 +13,7 @@ import QuartzCore
 
 internal let kPulsatorAnimationKey = "pulsator"
 
-public class Pulsator: CAReplicatorLayer {
+public class Pulsator: CAReplicatorLayer, CAAnimationDelegate {
 
     private let pulse = CALayer()
     private var animationGroup: CAAnimationGroup!
